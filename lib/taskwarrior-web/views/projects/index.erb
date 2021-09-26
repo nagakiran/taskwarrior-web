@@ -25,7 +25,7 @@
                 <th>Due</th>
                 <th>Tags</th>
                 <th>Priority</th>
-                <% if @can_edit %><th class="no-sort"></th><% end %>
+                <% if false %><th class="no-sort"></th><% end %>
               </tr>
             </thead>
             <tbody>
@@ -35,7 +35,7 @@
                   <td><%= format_date(task.due) unless task.due.nil? %></td>
                   <td><%= format_tags(task.tags) unless task.tags.nil? %></td>
                   <td><%= task.priority unless task.priority.nil? %></td>
-                  <% if @can_edit %><td><%= crud_links(task) if task.active? %></td><% end %>
+                  <% if false %><td><%= crud_links(task) if task.active? %></td><% end %>
                 </tr>
               <% end %>
             </tbody>
